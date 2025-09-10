@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #20293A;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  & .quote-box {
+    width: 90%;
+    height: fit-content;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #3a3f49;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & .author {
+      color: #E3E8EF;
+      font-size: 1rem;
+    }
+
+    & .tags {
+      display: flex;
+      gap: 1rem;
+
+      & .tag {
+        color: #AEB0FF;
+        border: solid 1px #AEB0FF;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+        padding: 0.3rem 1rem;
+        border-radius: 1rem;
+        transition: 0.3s;
+      }
+
+      & .tag:hover {
+        scale: 1.1;
+      }
+    }
+
+    & .quote {
+      font-size: 1.5rem;
+      text-align: center;
+      color: #E3E8EF;
+    }
+  }
+
+  & .menu {
+    display: flex;
+    gap: 1rem;
+
+    & button {
+      display: flex;
+      place-items: center;
+      gap: 0.5rem;
+      text-transform: capitalize;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      color: #E3E8EF;
+      background-color: #3a3f49;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    & button:hover {
+      scale: 1.1;
+    }
+  }
+}
